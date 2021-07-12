@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/black-sustainability-inc/static/js/main.8aca23a5.chunk.js",
+    "main.js.map": "/black-sustainability-inc/static/js/main.8aca23a5.chunk.js.map",
+    "runtime-main.js": "/black-sustainability-inc/static/js/runtime-main.3c28a1b0.js",
+    "runtime-main.js.map": "/black-sustainability-inc/static/js/runtime-main.3c28a1b0.js.map",
+    "static/js/2.671a6ab8.chunk.js": "/black-sustainability-inc/static/js/2.671a6ab8.chunk.js",
+    "static/js/2.671a6ab8.chunk.js.map": "/black-sustainability-inc/static/js/2.671a6ab8.chunk.js.map",
+    "static/js/3.c761b464.chunk.js": "/black-sustainability-inc/static/js/3.c761b464.chunk.js",
+    "static/js/3.c761b464.chunk.js.map": "/black-sustainability-inc/static/js/3.c761b464.chunk.js.map",
+    "index.html": "/black-sustainability-inc/index.html",
+    "static/js/2.671a6ab8.chunk.js.LICENSE.txt": "/black-sustainability-inc/static/js/2.671a6ab8.chunk.js.LICENSE.txt",
+    "static/media/focusAreas.a6c43cfe.svg": "/black-sustainability-inc/static/media/focusAreas.a6c43cfe.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c28a1b0.js",
+    "static/js/2.671a6ab8.chunk.js",
+    "static/js/main.8aca23a5.chunk.js"
+  ]
+}
