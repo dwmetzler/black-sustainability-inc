@@ -84,7 +84,7 @@ const LabeledTextBox = (props: LabeledTextBoxProps) => {
     return (
         <Box textAlign={"left"}>
             <Heading textAlign={"left"} fontSize={"1.2rem"}>{props.label}</Heading>
-            <Text>{props.text}</Text>
+            <Text whiteSpace={"pre-line"}>{props.text}</Text>
         </Box>
     )
 }

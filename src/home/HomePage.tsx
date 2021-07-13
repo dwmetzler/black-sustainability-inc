@@ -56,7 +56,7 @@ const HomePage = (props: HomePageProps) => {
                     backgroundPosition={"left"}
                     backgroundSize={"cover"}>
                     <Text width={"50%"}
-                          fontSize={"2rem"}
+                          fontSize={"1.75rem"}
                           fontWeight={"200"}
                           color={"white"}
                           marginLeft={"10rem"}
@@ -77,21 +77,21 @@ const HomePage = (props: HomePageProps) => {
                         <Heading fontSize={"2rem"} color={"brand.green"} textAlign={"left"}>
                             We are building the largest Black & Green network of sustainability professionals, entrepreneurs, & enthusiasts.
                         </Heading>
-                        <Text fontSize={"1.5rem"} textAlign={"left"}>
-                            Join us on our mission to connect and equip people of Afrikan descent with resources and development opportunities in sustainability fields.
+                        <Text>
+                            We invite you to join us on our mission to connect and equip people of Afrikan descent with resources and development opportunities in sustainability fields.
                         </Text>
                         <Spacer/>
                         <CallToActionButton type={CallsToAction.JOIN} label={"Join our network now"}/>
                     </VStack>
                 </HStack>
-                <VStack marginTop={"3rem"} spacing={6}>
-                    <Heading color={"white"} marginBottom={"1rem"}>
+                <VStack marginTop={"sectionMargin"} spacing={6}>
+                    <Heading variant={"sectionTitle"}>
                         Current Projects
                     </Heading>
                     <ProjectTabs projects={currentProjects}/>
                 </VStack>
-                <VStack marginTop={"3rem"} zIndex={2} marginBottom={"4rem"}>
-                    <Heading color={"white"} marginBottom={"3rem"}>
+                <VStack marginTop={"sectionMargin"} zIndex={2} marginBottom={"4rem"}>
+                    <Heading variant={"sectionTitle"}>
                         Our Leadership Team
                     </Heading>
                     <Grid templateColumns={"repeat(3, 1fr)"} gap={12} paddingX={"4rem"}>
@@ -115,7 +115,7 @@ const HomePage = (props: HomePageProps) => {
                                     "Brother Charles joined Black Sustainability, Inc. in 2016 as an attendee of our inaugural summit. He works to identify potential speakers and presenters within the field of sustainable agriculture. He has moderated sessions, led outreach and continues to be active in our Sustainable Agriculture efforts."}/>
                     </Grid>
                 </VStack>
-                <HStack bgColor={"white"} color={"black"} paddingY={"5rem"} boxShadow={"lg"}>
+                <HStack bgColor={"white"} color={"black"} paddingY={"sectionMargin"} boxShadow={"lg"}>
                     <VStack width={"80%"} marginX={"3rem"} spacing={"3rem"}>
                         <VStack>
                             <Heading color={"brand.green"} fontSize={"4rem"}>
@@ -135,8 +135,7 @@ const HomePage = (props: HomePageProps) => {
                         spacing={"10rem"}
                         alignItems={"center"}
                         bgColor={"brand.black"}
-                        color={"#ccc"}
-                        fontSize={"0.9rem"}>
+                        textStyle={"footerBody"}>
                     <Text>
                         &copy; 2021 Black Sustainability, Inc.
                     </Text>
@@ -153,6 +152,6 @@ export const HomePageBaseComponent = HomePage;
 
 const mapStateToProps = ({ home }: RootState): StoreProps => {
     return {currentProjects: home.currentProjects};
-}
+};
 
 export default connect(mapStateToProps, null)(HomePage);

@@ -1,4 +1,5 @@
-import { extendTheme } from "@chakra-ui/react";
+import {extendTheme, Heading, HStack} from "@chakra-ui/react";
+import React from "react";
 
 const theme = extendTheme({
     colors: {
@@ -21,7 +22,23 @@ const theme = extendTheme({
         Heading: {
             baseStyle: {
                 textAlign: "center",
-                fontVariationSettings: "wdth 600"
+            },
+            variants: {
+                sectionTitle: {
+                    color: "white",
+                    marginBottom: "1rem"
+                }
+            }
+        },
+        Text: {
+            baseStyle: {
+                fontSize: "1rem"
+            },
+            variants: {
+                footer: {
+                    color: "#ccc",
+                    fontSize: ""
+                }
             }
         }
     },
@@ -36,6 +53,13 @@ const theme = extendTheme({
             fontWeight: "700",
             fontSize: "2rem"
         },
+        footerBody: {
+            color: "#ccc",
+            fontSize: "0.9rem"
+        }
+    },
+    space: {
+        sectionMargin: "3rem"
     }
 });
 

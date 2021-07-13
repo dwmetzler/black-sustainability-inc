@@ -17,7 +17,7 @@ const dummyProject1 = new Project(
     "Nia OT Foods Limited",
     "Sustainable Agriculture and Global Community",
     "Ghana",
-    "Theophilus Owusu is developing a regenerative moringa agroforestry project.\n\nMoringa is the main crop on his property, while vetiva, citronella, plantain and lemongrass serve as cover crops and provide soil + water conservation. These crops also provide food and medicine to be used in essential oil production and local roofing.",
+    "Theophilus Owusu is developing a regenerative moringa agroforestry project.\nMoringa is the main crop on his property, while vetiva, citronella, plantain and lemongrass serve as cover crops and provide soil + water conservation. These crops also provide food and medicine to be used in essential oil production and local roofing.",
     "https://static.wixstatic.com/media/af8b67_60006b87ad324631bc0fad57a942856b~mv2.png/v1/fill/w_916,h_516,al_c,q_90,usm_0.66_1.00_0.01/Screen%20Shot%202020-09-14%20at%206_12_59%20PM.webp",
     dummyGoals);
 
@@ -28,10 +28,10 @@ const dummyGoals2: Array<ProjectGoal> = [
 ];
 const dummyProject2 = new Project(
     "2",
-    "The Granny Nanny Maroons",
+    "The Granny Nanny Cultural Group",
     "Global Community",
     "Jamaica",
-"We are a traditional Jamaican Maroon performing arts ensemble, which consists of community-based artists, musicians, drummers, storytellers, craftspeople and herbal healers from the Windward Maroon capital and UNESCO World Heritage Site of Moore Town and the larger Rio Grande Valley.\n\nWe are finishing the Granny Nanny Maroon Culture Yawd, a mixed-use space for Live Cultural Edutainment; Arts & Craft Creation & Merchandising; Education & Skills Training Workshops; Jerk Pit & Herbal Center; and an Information Clearinghouse.",
+"We are a traditional Jamaican Maroon performing arts ensemble, which consists of community-based artists, musicians, drummers, storytellers, craftspeople and herbal healers from the Windward Maroon capital and UNESCO World Heritage Site of Moore Town and the larger Rio Grande Valley.\nWe are finishing the Granny Nanny Maroon Culture Yawd, a mixed-use space for Live Cultural Edutainment; Arts & Craft Creation & Merchandising; Education & Skills Training Workshops; Jerk Pit & Herbal Center; and an Information Clearinghouse.",
     "https://static.wixstatic.com/media/af8b67_eaaefac8095149468c03e56ed10d3b60~mv2.jpg/v1/fill/w_593,h_703,al_c,q_85/MAROON.webp",
     dummyGoals2);
 
