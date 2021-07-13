@@ -7,6 +7,7 @@ import {RootState} from "../RootReducer";
 import {connect} from "react-redux";
 import networkGraphic from "../img/focusAreas.svg";
 import CallToActionButton, {CallsToAction} from "../buttons/CallToActionButton";
+import BooGrid from "./BooGrid";
 
 type StoreProps = {
     currentProjects: Array<Project>;
@@ -83,15 +84,15 @@ const HomePage = (props: HomePageProps) => {
                         <CallToActionButton type={CallsToAction.JOIN} label={"Join our network now"}/>
                     </VStack>
                 </HStack>
-                <VStack marginTop={"2rem"} spacing={6}>
-                    <Heading color={"#fcfffc"}>
+                <VStack marginTop={"3rem"} spacing={6}>
+                    <Heading color={"white"} marginBottom={"1rem"}>
                         Current Projects
                     </Heading>
                     <ProjectTabs projects={currentProjects}/>
                 </VStack>
-                <VStack marginTop={"2rem"} zIndex={2} boxShadow={"lg"}>
-                    <Heading color={"white"} marginBottom={"1rem"}>
-                        Our Team
+                <VStack marginTop={"3rem"} zIndex={2} marginBottom={"4rem"}>
+                    <Heading color={"white"} marginBottom={"3rem"}>
+                        Our Leadership Team
                     </Heading>
                     <Grid templateColumns={"repeat(3, 1fr)"} gap={12} paddingX={"4rem"}>
                         <TeamAvatar imageUrl={"https://static.wixstatic.com/media/af8b67_265cf0f10be040b3a6697b6823648da5~mv2.jpg/v1/crop/x_0,y_600,w_2400,h_2400/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/Raina(17of20).webp"}
@@ -114,24 +115,22 @@ const HomePage = (props: HomePageProps) => {
                                     "Brother Charles joined Black Sustainability, Inc. in 2016 as an attendee of our inaugural summit. He works to identify potential speakers and presenters within the field of sustainable agriculture. He has moderated sessions, led outreach and continues to be active in our Sustainable Agriculture efforts."}/>
                     </Grid>
                 </VStack>
-                <VStack bgColor={"brand.green"} color={"white"} paddingY={"3rem"}>
-                    <Heading>
-                        B.O.O.S.
-                    </Heading>
-                    <Text>
-                        (Black owned and operated supporters)
-                    </Text>
-                    <Grid width={"100%"} bgColor={"white"} templateColumns={"repeat(5, 1fr)"} gap={6} boxShadow={"lg"}>
-                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
-                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
-                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
-                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
-                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
-                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
-                    </Grid>
-                </VStack>
-                <HStack paddingY={"1rem"}
-                        paddingBottom={"3rem"}
+                <HStack bgColor={"white"} color={"black"} paddingY={"5rem"} boxShadow={"lg"}>
+                    <VStack width={"80%"} marginX={"3rem"} spacing={"3rem"}>
+                        <VStack>
+                            <Heading color={"brand.green"} fontSize={"4rem"}>
+                                <span style={{color: "black"}}>Our wonderful</span> B.O.O.S.
+                            </Heading>
+                            <Text fontWeight={400} fontSize={"1.3rem"}>
+                                (Black owned and operated supporters)
+                            </Text>
+                        </VStack>
+                        <CallToActionButton type={CallsToAction.DONATE} label={"Become a supporter"}/>
+                    </VStack>
+                    <BooGrid/>
+                </HStack>
+                <HStack paddingY={"2rem"}
+                        paddingBottom={"2rem"}
                         justify={"center"}
                         spacing={"10rem"}
                         alignItems={"center"}
