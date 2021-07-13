@@ -3,7 +3,9 @@ import {
   ChakraProvider,
 } from "@chakra-ui/react"
 import Home from "./home"
-import theme from "./theme";
+import theme from "./theme"
+import "@fontsource/noto-sans-hk"
+import "@fontsource/oswald"
 
 export const App = () => (
   <ChakraProvider theme={theme}>

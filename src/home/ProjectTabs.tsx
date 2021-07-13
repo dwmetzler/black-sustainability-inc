@@ -1,9 +1,9 @@
 import Project from "../api/models/Project";
 import {
-    Box,
+    Box, Button,
     Flex,
     Grid,
-    Heading,
+    Heading, HStack,
     Image,
     Spacer,
     Tab,
@@ -55,7 +55,7 @@ const ProjectTabs = (props: ProjectTabsProp) => {
                         <Grid templateColumns={`repeat(${project.goals.length + 2}, 1fr)`} gap={10}>
                             <Spacer/>
                             {project.goals.map((goal, index) => (
-                                <VStack spacing={"1rem"} bgColor={"brand.green"} color={"#fcfffc"} padding={3} borderRadius={"1rem"} border={"solid 0.5px rgba(0,0,0,0.05)"} boxShadow={"lg"} paddingY={"2rem"}>
+                                <VStack spacing={"1rem"} bgColor={"white"} color={"brand.black"} padding={3} borderRadius={"1rem"} border={"solid 0.5px rgba(0,0,0,0.05)"} boxShadow={"lg"} paddingY={"2rem"}>
                                     <Flex justify={"center"} alignItems={"center"} borderRadius={"50%"} border={"2px solid #eee"} fontSize={"2rem"} width={"3.5rem"} height={"3.5rem"}>
                                         <Heading>{index + 1}</Heading>
                                     </Flex>
@@ -64,6 +64,14 @@ const ProjectTabs = (props: ProjectTabsProp) => {
                                 </VStack>
                             ))}
                         </Grid>
+                        <HStack justify={"center"} marginTop={"2rem"} marginBottom={"1rem"}>
+                            <Text>
+                                We need your help to complete this project!
+                            </Text>
+                            <Button _hover={{opacity: 0.5}}>
+                                Donate
+                            </Button>
+                        </HStack>
                     </TabPanel>))}
             </TabPanels>
         </Tabs>

@@ -24,7 +24,7 @@ type TeamAvatarProps = OwnProps;
 
 const TeamAvatar = (props: TeamAvatarProps) => {
     return (
-        <VStack>
+        <VStack bgColor={"white"} paddingY={"2rem"} borderRadius={"1rem"} boxShadow={"lg"}>
             <Avatar size={"2xl"} name={props.name} src={props.imageUrl}/>
             <Heading fontSize={"1.5rem"} fontWeight={400}>
                 {props.name}
@@ -43,7 +43,7 @@ const HomePage = (props: HomePageProps) => {
     const {currentProjects} = props;
 
     return (
-        <Box>
+        <Box bgColor={"brand.green"}>
             <DonateHeader/>
             <Box marginTop={"4rem"}>
                 <HStack
@@ -51,8 +51,9 @@ const HomePage = (props: HomePageProps) => {
                     width={"100%"}
                     height={"30rem"}
                     backgroundImage={"https://giveme-5.org/wp-content/uploads/2019/03/sustainable_agriculture_fyouture.jpg"}
-                    backgroundPosition={"center"}
-                    backgroundSize={"cover"}>
+                    backgroundPosition={"bottom"}
+                    backgroundSize={"cover"}
+                bgAttachment={"fixed"}>
                     <Text width={"40%"}
                           fontSize={"2rem"}
                           fontWeight={"500"}
@@ -64,16 +65,16 @@ const HomePage = (props: HomePageProps) => {
                           padding={"1rem"}
                           paddingX={"2rem"}
                           borderRadius={"1rem"}>
-                        Committed to sustainable development and providing interdisciplinary educational resources for people of Afrikan descent
+                        Promoting sustainable development and providing interdisciplinary educational resources for people of Afrikan descent
                     </Text>
                 </HStack>
                 {/* eslint-disable-next-line react/jsx-no-undef */}
-                <HStack justify={"center"} alignItems={"center"}>
+                <HStack boxShadow={"lg"} bgColor={"white"} justify={"center"} alignItems={"center"}>
 
                     <Image height={"50rem"} boxSize={"50rem"} src={networkGraphic}/>
                     <VStack  maxWidth={"30%"}>
                         <Heading fontSize={"2rem"} color={"brand.green"} textAlign={"left"}>
-                            Building the largest Black & Green network of sustainability professionals, entrepreneurs, & enthusiasts
+                            We are building the largest Black & Green network of sustainability professionals, entrepreneurs, & enthusiasts.
                         </Heading>
                         <Spacer/>
                         <Text fontSize={"1.5rem"} textAlign={"left"}>
@@ -81,14 +82,14 @@ const HomePage = (props: HomePageProps) => {
                         </Text>
                     </VStack>
                 </HStack>
-                <VStack bgColor={"brand.green"} paddingY={"2rem"} marginY={"1rem"} spacing={6}>
+                <VStack marginTop={"2rem"} spacing={6}>
                     <Heading color={"#fcfffc"}>
                         Current Projects
                     </Heading>
                     <ProjectTabs projects={currentProjects}/>
                 </VStack>
-                <VStack marginY={"2rem"}>
-                    <Heading marginY={"1.5rem"}>
+                <VStack marginTop={"2rem"} zIndex={2} boxShadow={"lg"}>
+                    <Heading color={"white"}>
                         Team
                     </Heading>
                     <Grid templateColumns={"repeat(5, 1fr)"} gap={12}>
@@ -105,6 +106,22 @@ const HomePage = (props: HomePageProps) => {
                                     name={"Charles Greenlea"}
                                     title={"Agriculture Chair"}
                                     bio={"biobiobio"}/>
+                    </Grid>
+                </VStack>
+                <VStack bgColor={"brand.green"} color={"white"} paddingY={"3rem"}>
+                    <Heading>
+                        B.O.O.S.
+                    </Heading>
+                    <Text>
+                        (Black owned and operated supporters)
+                    </Text>
+                    <Grid width={"100%"} bgColor={"white"} templateColumns={"repeat(5, 1fr)"} gap={6}>
+                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
+                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
+                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
+                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
+                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
+                        <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
                     </Grid>
                 </VStack>
             </Box>

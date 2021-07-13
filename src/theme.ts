@@ -20,12 +20,17 @@ const theme = extendTheme({
         },
         Heading: {
             baseStyle: {
-                textAlign: "center"
+                textAlign: "center",
+                fontVariationSettings: "wdth 600"
             }
         }
     },
+    fonts: {
+        heading: "Oswald",
+        body: "Noto Sans HK"
+    },
     textStyles: {
-        h1: {
+        pageTitle: {
             color: "brand.green",
             textTransform: "uppercase",
             fontWeight: "700",
