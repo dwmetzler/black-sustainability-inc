@@ -1,9 +1,10 @@
 import Project from "../api/models/Project";
 import {
-    Box, Button,
+    Box,
     Flex,
     Grid,
-    Heading, HStack,
+    Heading,
+    HStack,
     Image,
     Spacer,
     Tab,
@@ -15,6 +16,7 @@ import {
     VStack
 } from "@chakra-ui/react";
 import React from "react";
+import CallToActionButton, {CallsToAction} from "../buttons/CallToActionButton";
 
 type StoreProps = {
     projects: Array<Project>;
@@ -56,21 +58,16 @@ const ProjectTabs = (props: ProjectTabsProp) => {
                             <Spacer/>
                             {project.goals.map((goal, index) => (
                                 <VStack spacing={"1rem"} bgColor={"white"} color={"brand.black"} padding={3} borderRadius={"1rem"} border={"solid 0.5px rgba(0,0,0,0.05)"} boxShadow={"lg"} paddingY={"2rem"}>
-                                    <Flex justify={"center"} alignItems={"center"} borderRadius={"50%"} border={"2px solid #eee"} fontSize={"2rem"} width={"3.5rem"} height={"3.5rem"}>
-                                        <Heading>{index + 1}</Heading>
+                                    <Flex justify={"center"} alignItems={"center"} borderRadius={"50%"} border={"2px solid"} borderColor={"brand.green"} fontSize={"2rem"} width={"3.5rem"} height={"3.5rem"}>
+                                        <Heading color={"brand.green"}>{index + 1}</Heading>
                                     </Flex>
-                                    <Heading fontSize={"1.5rem"}>{goal.summary}</Heading>
+                                    <Heading fontWeight={"500"} fontSize={"1.5rem"}>{goal.summary}</Heading>
                                     <Text>{goal.description}</Text>
                                 </VStack>
                             ))}
                         </Grid>
                         <HStack justify={"center"} marginTop={"2rem"} marginBottom={"1rem"}>
-                            <Text>
-                                We need your help to complete this project!
-                            </Text>
-                            <Button _hover={{opacity: 0.5}}>
-                                Donate
-                            </Button>
+                            <CallToActionButton type={CallsToAction.DONATE} label={"Donate now to help us complete this project"}/>
                         </HStack>
                     </TabPanel>))}
             </TabPanels>

@@ -1,11 +1,12 @@
 import React from "react";
-import {Avatar, Box, Grid, Heading, HStack, Image, Spacer, Text, VStack} from "@chakra-ui/react";
+import {Avatar, Box, Grid, Heading, HStack, Image, Link, Spacer, Text, VStack} from "@chakra-ui/react";
 import DonateHeader from "../navigation/DonateHeader";
 import ProjectTabs from "./ProjectTabs";
 import Project from "../api/models/Project";
 import {RootState} from "../RootReducer";
 import {connect} from "react-redux";
 import networkGraphic from "../img/focusAreas.svg";
+import CallToActionButton, {CallsToAction} from "../buttons/CallToActionButton";
 
 type StoreProps = {
     currentProjects: Array<Project>;
@@ -26,13 +27,13 @@ const TeamAvatar = (props: TeamAvatarProps) => {
     return (
         <VStack bgColor={"white"} paddingY={"2rem"} borderRadius={"1rem"} boxShadow={"lg"}>
             <Avatar size={"2xl"} name={props.name} src={props.imageUrl}/>
-            <Heading fontSize={"1.5rem"} fontWeight={400}>
+            <Heading fontSize={"1.5rem"} fontWeight={400} paddingX={"3rem"}>
                 {props.name}
             </Heading>
-            <Heading fontSize={"1rem"} fontWeight={600}>
+            <Heading fontSize={"1.1rem"} fontWeight={600}>
                 {props.title}
             </Heading>
-            <Text>
+            <Text paddingX={"2rem"} whiteSpace={"pre-line"}>
                 {props.bio}
             </Text>
         </VStack>
@@ -47,20 +48,20 @@ const HomePage = (props: HomePageProps) => {
             <DonateHeader/>
             <Box marginTop={"4rem"}>
                 <HStack
-                    justify={"flex-end"}
+                    justify={"flex-start"}
                     width={"100%"}
                     height={"30rem"}
                     backgroundImage={"https://giveme-5.org/wp-content/uploads/2019/03/sustainable_agriculture_fyouture.jpg"}
-                    backgroundPosition={"bottom"}
-                    backgroundSize={"cover"}
-                bgAttachment={"fixed"}>
-                    <Text width={"40%"}
+                    backgroundPosition={"left"}
+                    backgroundSize={"cover"}>
+                    <Text width={"50%"}
                           fontSize={"2rem"}
-                          fontWeight={"500"}
-                          color={"#333"}
-                          marginRight={"10rem"}
+                          fontWeight={"200"}
+                          color={"white"}
+                          marginLeft={"10rem"}
                           marginTop={"-5rem"}
-                          bgColor={"rgba(255,255,255,0.6)"}
+                          bgColor={"rgba(0,0,0,0.2)"}
+                          boxShadow={"lg"}
                           backdropFilter={"blur(10px)"}
                           padding={"1rem"}
                           paddingX={"2rem"}
@@ -70,16 +71,16 @@ const HomePage = (props: HomePageProps) => {
                 </HStack>
                 {/* eslint-disable-next-line react/jsx-no-undef */}
                 <HStack boxShadow={"lg"} bgColor={"white"} justify={"center"} alignItems={"center"}>
-
-                    <Image height={"50rem"} boxSize={"50rem"} src={networkGraphic}/>
-                    <VStack  maxWidth={"30%"}>
+                    <Image height={"40rem"} boxSize={"40rem"} src={networkGraphic} margin={"5rem 8rem"}/>
+                    <VStack  maxWidth={"30%"} spacing={"1rem"} alignItems={"flex-start"}>
                         <Heading fontSize={"2rem"} color={"brand.green"} textAlign={"left"}>
                             We are building the largest Black & Green network of sustainability professionals, entrepreneurs, & enthusiasts.
                         </Heading>
-                        <Spacer/>
                         <Text fontSize={"1.5rem"} textAlign={"left"}>
                             Join us on our mission to connect and equip people of Afrikan descent with resources and development opportunities in sustainability fields.
                         </Text>
+                        <Spacer/>
+                        <CallToActionButton type={CallsToAction.JOIN} label={"Join our network now"}/>
                     </VStack>
                 </HStack>
                 <VStack marginTop={"2rem"} spacing={6}>
@@ -89,23 +90,28 @@ const HomePage = (props: HomePageProps) => {
                     <ProjectTabs projects={currentProjects}/>
                 </VStack>
                 <VStack marginTop={"2rem"} zIndex={2} boxShadow={"lg"}>
-                    <Heading color={"white"}>
-                        Team
+                    <Heading color={"white"} marginBottom={"1rem"}>
+                        Our Team
                     </Heading>
-                    <Grid templateColumns={"repeat(5, 1fr)"} gap={12}>
-                        <Spacer/>
+                    <Grid templateColumns={"repeat(3, 1fr)"} gap={12} paddingX={"4rem"}>
                         <TeamAvatar imageUrl={"https://static.wixstatic.com/media/af8b67_265cf0f10be040b3a6697b6823648da5~mv2.jpg/v1/crop/x_0,y_600,w_2400,h_2400/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/Raina(17of20).webp"}
                                     name={"Afia Raina Turner-Greenlea"}
                                     title={"Co-Founder & Chair"}
-                                    bio={"biobiobio"}/>
+                                    bio={"Raina's roots are as solid as Georgia's red clay. She is a wife & mother with a passion for creating & supporting healthy, sustainable communities by applying indigenous wisdom & exchanging best practices to (re)develop/support sustainable communities without causing irreversible damage to the planet.\n" +
+                                    "\n" +
+                                    "She has 9 years of experience with culturally-relevant education & project management, 5 years organizing & hosting Black Sustainability Network and Summit and is the former Director of Entrepreneurship and Community Engagement for the Center for Civic Innovation."}/>
                         <TeamAvatar imageUrl={"https://static.wixstatic.com/media/af8b67_f6b8997556d34b6e81ccba8c1afea216~mv2.jpg/v1/crop/x_0,y_53,w_427,h_427/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/IMG_1129_edited.webp"}
                                     name={"Yeamah Brewer"}
                                     title={"Co-Founder & Vice Chair"}
-                                    bio={"biobiobio"}/>
+                                    bio={"Based in the Twin Cities, Yeamah joined our team as a volunteer after learning of our annual summit. She leads strategic planning and organizational development.\n" +
+                                    "\n" +
+                                    "Often behind the scenes, Yeamah also serves as Vice-Chair of our annual global Summit (2018-Present) and leads our social media engagement & member recruitment on Clubhouse."}/>
                         <TeamAvatar imageUrl={"https://static.wixstatic.com/media/af8b67_8618963a95bd4c3893d846e3b3472b01~mv2.jpeg/v1/fill/w_320,h_320,al_c,q_80,usm_0.66_1.00_0.01/charles.webp"}
                                     name={"Charles Greenlea"}
                                     title={"Agriculture Chair"}
-                                    bio={"biobiobio"}/>
+                                    bio={"Charles is a multigenerational resident of Atlanta and the descendant of a long line of growers, educators, entrepreneurs, and organizers. In 2019, he founded ECO-PARADIGM, LLC to help balance ecology and economics for Atlanta's communities of color.\n" +
+                                    "\n" +
+                                    "Brother Charles joined Black Sustainability, Inc. in 2016 as an attendee of our inaugural summit. He works to identify potential speakers and presenters within the field of sustainable agriculture. He has moderated sessions, led outreach and continues to be active in our Sustainable Agriculture efforts."}/>
                     </Grid>
                 </VStack>
                 <VStack bgColor={"brand.green"} color={"white"} paddingY={"3rem"}>
@@ -115,7 +121,7 @@ const HomePage = (props: HomePageProps) => {
                     <Text>
                         (Black owned and operated supporters)
                     </Text>
-                    <Grid width={"100%"} bgColor={"white"} templateColumns={"repeat(5, 1fr)"} gap={6}>
+                    <Grid width={"100%"} bgColor={"white"} templateColumns={"repeat(5, 1fr)"} gap={6} boxShadow={"lg"}>
                         <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
                         <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
                         <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
@@ -124,6 +130,21 @@ const HomePage = (props: HomePageProps) => {
                         <Box width={"5rem"} height={"5rem"} bgColor={"brand.black"}></Box>
                     </Grid>
                 </VStack>
+                <HStack paddingY={"1rem"}
+                        paddingBottom={"3rem"}
+                        justify={"center"}
+                        spacing={"10rem"}
+                        alignItems={"center"}
+                        bgColor={"brand.black"}
+                        color={"#ccc"}
+                        fontSize={"0.9rem"}>
+                    <Text>
+                        &copy; 2021 Black Sustainability, Inc.
+                    </Text>
+                    <Link href={"mailto:blacksustainabilitysummit@gmail.com"}>
+                        blacksustainabilitysummit@gmail.com
+                    </Link>
+                </HStack>
             </Box>
         </Box>
     )

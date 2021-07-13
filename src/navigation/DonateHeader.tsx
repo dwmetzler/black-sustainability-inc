@@ -1,6 +1,7 @@
-import {Button, Flex, Heading, HStack, Image, Spacer} from "@chakra-ui/react";
+import {Flex, Heading, HStack, Image, Spacer} from "@chakra-ui/react";
 import React from "react";
 import logoPlaceholder from "../img/Logo Placeholder.png";
+import CallToActionButton, {CallsToAction} from "../buttons/CallToActionButton";
 
 const DonateHeader = () => {
     return (
@@ -13,12 +14,8 @@ const DonateHeader = () => {
                 </Heading>
             </HStack>
             <HStack>
-                <Button _hover={{opacity: 0.5}}>
-                    Join
-                </Button>
-                <Button _hover={{opacity: 0.5}}>
-                    Donate
-                </Button>
+                <CallToActionButton type={CallsToAction.JOIN} label={"Join"}/>
+                <CallToActionButton type={CallsToAction.DONATE} label={"Donate"}/>
             </HStack>
         </Flex>
     )
