@@ -1,25 +1,38 @@
 {
   "files": {
-    "main.js": "/black-sustainability-inc/static/js/main.3124a389.chunk.js",
-    "main.js.map": "/black-sustainability-inc/static/js/main.3124a389.chunk.js.map",
+    "main.js": "/black-sustainability-inc/static/js/main.9fb91d23.chunk.js",
+    "main.js.map": "/black-sustainability-inc/static/js/main.9fb91d23.chunk.js.map",
     "runtime-main.js": "/black-sustainability-inc/static/js/runtime-main.1d7b792c.js",
     "runtime-main.js.map": "/black-sustainability-inc/static/js/runtime-main.1d7b792c.js.map",
-    "static/css/2.6421a786.chunk.css": "/black-sustainability-inc/static/css/2.6421a786.chunk.css",
-    "static/js/2.9db5bafc.chunk.js": "/black-sustainability-inc/static/js/2.9db5bafc.chunk.js",
-    "static/js/2.9db5bafc.chunk.js.map": "/black-sustainability-inc/static/js/2.9db5bafc.chunk.js.map",
+    "static/css/2.4ac7618d.chunk.css": "/black-sustainability-inc/static/css/2.4ac7618d.chunk.css",
+    "static/js/2.fc9920f9.chunk.js": "/black-sustainability-inc/static/js/2.fc9920f9.chunk.js",
+    "static/js/2.fc9920f9.chunk.js.map": "/black-sustainability-inc/static/js/2.fc9920f9.chunk.js.map",
     "static/js/3.ea3bb94e.chunk.js": "/black-sustainability-inc/static/js/3.ea3bb94e.chunk.js",
     "static/js/3.ea3bb94e.chunk.js.map": "/black-sustainability-inc/static/js/3.ea3bb94e.chunk.js.map",
     "index.html": "/black-sustainability-inc/index.html",
-    "static/css/2.6421a786.chunk.css.map": "/black-sustainability-inc/static/css/2.6421a786.chunk.css.map",
-    "static/js/2.9db5bafc.chunk.js.LICENSE.txt": "/black-sustainability-inc/static/js/2.9db5bafc.chunk.js.LICENSE.txt",
+    "static/css/2.4ac7618d.chunk.css.map": "/black-sustainability-inc/static/css/2.4ac7618d.chunk.css.map",
+    "static/js/2.fc9920f9.chunk.js.LICENSE.txt": "/black-sustainability-inc/static/js/2.fc9920f9.chunk.js.LICENSE.txt",
     "static/media/Logo Placeholder.5c43cb3c.png": "/black-sustainability-inc/static/media/Logo Placeholder.5c43cb3c.png",
+    "static/media/boo1.29d35ad3.png": "/black-sustainability-inc/static/media/boo1.29d35ad3.png",
+    "static/media/boo10.231caff6.png": "/black-sustainability-inc/static/media/boo10.231caff6.png",
+    "static/media/boo11.8e2662a8.png": "/black-sustainability-inc/static/media/boo11.8e2662a8.png",
+    "static/media/boo13.fe929b81.png": "/black-sustainability-inc/static/media/boo13.fe929b81.png",
+    "static/media/boo14.f6d6bbb7.png": "/black-sustainability-inc/static/media/boo14.f6d6bbb7.png",
+    "static/media/boo15.a643b84f.png": "/black-sustainability-inc/static/media/boo15.a643b84f.png",
+    "static/media/boo16.35f49cb7.png": "/black-sustainability-inc/static/media/boo16.35f49cb7.png",
+    "static/media/boo2.6284c64a.png": "/black-sustainability-inc/static/media/boo2.6284c64a.png",
+    "static/media/boo3.eb48dd84.png": "/black-sustainability-inc/static/media/boo3.eb48dd84.png",
+    "static/media/boo5.4ec3f0f9.png": "/black-sustainability-inc/static/media/boo5.4ec3f0f9.png",
+    "static/media/boo7.79d2dd1b.png": "/black-sustainability-inc/static/media/boo7.79d2dd1b.png",
+    "static/media/boo8.c85393bc.png": "/black-sustainability-inc/static/media/boo8.c85393bc.png",
+    "static/media/boo9.be5a00a8.png": "/black-sustainability-inc/static/media/boo9.be5a00a8.png",
     "static/media/focusAreas.5c3c3a95.svg": "/black-sustainability-inc/static/media/focusAreas.5c3c3a95.svg",
     "static/media/index.css": "/black-sustainability-inc/static/media/oswald-vietnamese-400-normal.21fb7cde.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.1d7b792c.js",
-    "static/css/2.6421a786.chunk.css",
-    "static/js/2.9db5bafc.chunk.js",
-    "static/js/main.3124a389.chunk.js"
+    "static/css/2.4ac7618d.chunk.css",
+    "static/js/2.fc9920f9.chunk.js",
+    "static/js/main.9fb91d23.chunk.js"
   ]
 }
