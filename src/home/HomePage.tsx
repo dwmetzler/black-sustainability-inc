@@ -125,7 +125,7 @@ const HomePage = (props: HomePageProps) => {
                                 (Black owned and operated supporters)
                             </Text>
                         </VStack>
-                        <CallToActionButton type={CallsToAction.DONATE} label={"Become a supporter"}/>
+                        <CallToActionButton type={CallsToAction.SPONSOR} label={"Become a supporter"}/>
                     </VStack>
                     <BooGrid/>
                 </HStack>

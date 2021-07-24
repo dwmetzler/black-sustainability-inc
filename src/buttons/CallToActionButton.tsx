@@ -3,7 +3,8 @@ import React from "react";
 
 export enum CallsToAction {
     JOIN,
-    DONATE
+    DONATE,
+    SPONSOR
 };
 
 type OwnProps = {
@@ -15,11 +16,14 @@ type CallToActionButtonProps = OwnProps;
 
 const onCallToActionClicked = (type: CallsToAction) => {
     switch(type) {
-        case CallsToAction.JOIN:
-            window.open("https://form.jotform.com/203615928402049", "_blank");
-            return true;
         case CallsToAction.DONATE:
-            window.open("https://www.blacksustainabilitysummit.com/join-our-network");
+            window.open("https://donorbox.org/support-black-sustainability-inc");
+            return true;
+        case CallsToAction.JOIN:
+            window.open("https://form.jotform.com/203615928402049");
+            return true;
+        case CallsToAction.SPONSOR:
+            window.open("https://forms.gle/u2haAbnCCkvCHgPD6");
             return true;
     }
 }
