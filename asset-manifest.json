@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/black-sustainability-inc/static/js/main.8c978c81.chunk.js",
-    "main.js.map": "/black-sustainability-inc/static/js/main.8c978c81.chunk.js.map",
+    "main.js": "/black-sustainability-inc/static/js/main.d775f0b5.chunk.js",
+    "main.js.map": "/black-sustainability-inc/static/js/main.d775f0b5.chunk.js.map",
     "runtime-main.js": "/black-sustainability-inc/static/js/runtime-main.1d7b792c.js",
     "runtime-main.js.map": "/black-sustainability-inc/static/js/runtime-main.1d7b792c.js.map",
     "static/css/2.4ac7618d.chunk.css": "/black-sustainability-inc/static/css/2.4ac7618d.chunk.css",
@@ -33,6 +33,6 @@
     "static/js/runtime-main.1d7b792c.js",
     "static/css/2.4ac7618d.chunk.css",
     "static/js/2.fc9920f9.chunk.js",
-    "static/js/main.8c978c81.chunk.js"
+    "static/js/main.d775f0b5.chunk.js"
   ]
 }
