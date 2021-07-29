@@ -112,7 +112,7 @@ const HomePage = (props: HomePageProps) => {
                                     title={"Agriculture Chair"}
                                     bio={"Charles is a multigenerational resident of Atlanta and the descendant of a long line of growers, educators, entrepreneurs, and organizers. In 2019, he founded ECO-PARADIGM, LLC to help balance ecology and economics for Atlanta's communities of color.\n" +
                                     "\n" +
-                                    "Brother Charles joined Black Sustainability, Inc. in 2016 as an attendee of our inaugural summit. He works to identify potential speakers and presenters within the field of sustainable agriculture. He has moderated sessions, led outreach and continues to be active in our Sustainable Agriculture efforts."}/>
+                                    "Brother Charles joined Black Sustainability, Inc. in 2016 at our inaugural summit. He works to identify potential speakers and presenters within the field of sustainable agriculture. He has moderated sessions, led outreach and continues to be active in our Sustainable Agriculture efforts."}/>
                     </Grid>
                 </VStack>
                 <HStack bgColor={"white"} color={"black"} paddingY={"sectionMargin"} boxShadow={"lg"}>
